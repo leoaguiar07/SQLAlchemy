@@ -529,3 +529,6 @@ Se você não especificar nenhuma tabela para a função drop_all. Isso eliminar
 ```python
 metadata.drop_all(engine)
 ```
+
+##### Original: https://www.datacamp.com/tutorial/sqlalchemy-tutorial-examples<br>
+##### Documentação oficial do SQLAlchemy: https://docs.sqlalchemy.org/en/20/
