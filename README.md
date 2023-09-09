@@ -1,4 +1,4 @@
-![capa](https://github.com/leoaguiar07/pyMongo/blob/main/mongo_python.fw.png)
+![capa](https://a.neko.red/mk/dcf3c9e6-7972-45dc-bffa-ab32bea347b6.jpg)
 
 ## O que é SQLAlchemy?
 SQLAlchemy é o kit de ferramentas Python SQL que permite aos desenvolvedores acessar e gerenciar bancos de dados SQL usando a linguagem de domínio Pythonic. Você pode escrever uma consulta na forma de uma string ou cadeia de objetos Python para consultas semelhantes. Trabalhar com objetos proporciona flexibilidade aos desenvolvedores e permite que eles criem aplicativos baseados em SQL de alto desempenho.
@@ -109,47 +109,40 @@ Nota: você também pode escrever o comando select assim:  ‘db.select([divisio
 Para visualizar a consulta, imprima o objeto de consulta e ele mostrará o comando SQL.
 
 
-SELECT divisions.division, divisions.name, divisions.country
-FROM divisions
+`SELECT divisions.division, divisions.name, divisions.country
+FROM divisions`
 
- OpenAI
-This code is written in SQL.
-• The code selects the columns "division", "name", and "country" from the table "divisions".
-• The "FROM" keyword specifies the table from which the data is being selected.
-• In summary, this code retrieves the specified columns from the "divisions" table.
-Was this helpful? Yes
- No
-SQL query result
-We will now execute the query using the connection object and extract the first five rows. 
+Resultado da consulta SQL
+Agora executaremos a consulta usando o objeto de conexão e extrairemos as primeiras cinco linhas.
 
-fetchone(): it will extract a single row at a time.
-fetchmany(n): it will extract the n number of rows at a time.
-fetchall(): it will extract all of the rows.  
+• fetchone(): it will extract a single row at a time.
+• fetchmany(n): it will extract the n number of rows at a time.
+• fetchall(): it will extract all of the rows.  
 
+```python
 exe = conn.execute(query) #executing the query
 result = exe.fetchmany(5) #extracting top 5 results
 print(result)
+```
 
- OpenAI
-The result shows the first five rows of the table. 
+O resultado mostra as primeiras cinco linhas da tabela.
 
 
-[('B1', 'Division 1A', 'Belgium'), ('D1', 'Bundesliga', 'Deutschland'), ('D2', '2. Bundesliga', 'Deutschland'), ('E0', 'Premier League', 'England'), ('E1', 'EFL Championship', 'England')]
+`[('B1', 'Division 1A', 'Belgium'), ('D1', 'Bundesliga', 'Deutschland'), ('D2', '2. Bundesliga', 'Deutschland'), ('E0', 'Premier League', 'England'), ('E1', 'EFL Championship', 'England')]`
 
- OpenAI
-Python SQLAlchemy Examples
-In this section, we will look at various SQLAlchemy examples for creating tables, inserting values, running SQL queries, data analysis, and table management. 
+ 
+### Exemplos de SQLAlchemy em Python
+Nesta seção, veremos vários exemplos de SQLAlchemy para criação de tabelas, inserção de valores, execução de consultas SQL, análise de dados e gerenciamento de tabelas.
 
-You can follow along or check out DataCamp’s Workspace. It contains a database, source code, and results. 
+### Criando Tabelas
+Primeiro, criaremos um novo banco de dados chamado “datacamp.sqlite”. 
+O create_engine criará um novo banco de dados automaticamente se não houver nenhum banco de dados com o mesmo nome. Portanto, criar e conectar são bastante semelhantes.
 
-Creating Tables
-First, we will create a new database called “datacamp.sqlite”. The create_engine will create a new database automatically if there is no database with the same name. So, creating and connecting are pretty much similar.
+Depois disso, conectaremos o banco de dados e criaremos um objeto de metadados.
 
-After that, we will connect the database and create a metadata object. 
+Usaremos a função Table do SQLAlchmy para criar uma tabela chamada “Student”
 
-We will use SQLAlchmy’s Table function to create a table called “Student”
-
-It consists of columns:
+Consiste em colunas:
 
 Id: Integer and primary key
 Name: String and non-nullable 
@@ -157,7 +150,7 @@ Major: String and default = “Math”
 Pass: Boolean and default =True 
 We have created the structure of the table. Let’s add it to the database using `metadata.create_all(engine)`.
 
-
+```python
 engine = db.create_engine('sqlite:///datacamp.sqlite')
 conn = engine.connect()
 metadata = db.MetaData()
@@ -170,208 +163,190 @@ Student = db.Table('Student', metadata,
               )
 
 metadata.create_all(engine) 
+```
 
- OpenAI
-Insert one
-To add a single row, we will first use `insert` and add the table object. After that, use `values` and add values to the columns manually. It works similarly to adding arguments to Python functions.   
+### Inserir
+Para adicionar uma única linha, primeiro usaremos `insert` e adicionaremos o objeto tabela. Depois disso, use `values` e adicione valores às colunas manualmente. Funciona de forma semelhante a adicionar argumentos às funções Python.
 
-Finally, we will execute the query using the connection to execute the function.
+Por fim, executaremos a consulta usando a conexão para executar a função.
 
-
+```python
 query = db.insert(Student).values(Id=1, Name='Matthew', Major="English", Pass=True)
 Result = conn.execute(query)
+```
 
- OpenAI
-Let’s check if we add the row to the “Student” table by executing a select query and fetching all the rows. 
+Vamos verificar se adicionamos a linha à tabela “Aluno” executando uma consulta de seleção e buscando todas as linhas.
 
-
+```python
 output = conn.execute(Student.select()).fetchall()
 print(output)
+```
 
- OpenAI
-We have successfully added the values. 
+Adicionamos os valores com sucesso.
 
 
-[(1, 'Matthew', 'English', True)]
+`1, 'Matthew', 'English', True)]`
 
- OpenAI
-Insert many
-Adding values one by one is not a practical way of populating the database. Let’s add multiple values using lists. 
 
-Create an insert query for the Student table.
-Create a list of multiple rows with column names and values.
-Execute the query with a second argument as values_list. 
+### Insira muitos
+Adicionar valores um por um não é uma forma prática de preencher o banco de dados. Vamos adicionar vários valores usando listas.
 
+Crie uma consulta de inserção para a tabela Aluno.
+Crie uma lista de várias linhas com nomes e valores de colunas.
+Execute a consulta com um segundo argumento como lista_valores.
+
+```python
 query = db.insert(Student)
 values_list = [{'Id':'2', 'Name':'Nisha', 'Major':"Science", 'Pass':False},
               {'Id':'3', 'Name':'Natasha', 'Major':"Math", 'Pass':True},
               {'Id':'4', 'Name':'Ben', 'Major':"English", 'Pass':False}]
 Result = conn.execute(query,values_list)
+```
 
- OpenAI
-To validate our results, run the simple select query.
+Para validar nossos resultados, execute a consulta de seleção simples.
 
-
+```python
 output = conn.execute(db.select([Student])).fetchall()
 print(output)
-
- OpenAI
-The table now contains more rows. 
+```
 
 
-[(1, 'Matthew', 'English', True), (2, 'Nisha', 'Science', False), (3, 'Natasha', 'Math', True), (4, 'Ben', 'English', False)]
-
- OpenAI
-Simple SQL Query with SQLAlchemy
-Instead of using Python objects, we can also execute SQL queries using String. 
-
-Just add the argument as a String to the `execute` function and view the result using `fetchall`.
+A tabela agora contém mais linhas.
 
 
+`[(1, 'Matthew', 'English', True), (2, 'Nisha', 'Science', False), (3, 'Natasha', 'Math', True), (4, 'Ben', 'English', False)]`
+
+
+### Consulta SQL simples com SQLAlchemy
+Em vez de usar objetos Python, também podemos executar consultas SQL usando String.
+
+Basta adicionar o argumento como uma String à função `execute` e visualizar o resultado usando `fetchall`.
+
+
+```python
 output = conn.execute("SELECT * FROM Student")
 print(output.fetchall())
+```
 
- OpenAI
-Output:
-
-
-[(1, 'Matthew', 'English', 1), (2, 'Nisha', 'Science', 0), (3, 'Natasha', 'Math', 1), (4, 'Ben', 'English', 0)]
-
- OpenAI
-You can even pass more complex SQL queries. In our case, we are selecting the Name and Major columns where the students have passed the exam. 
+`[(1, 'Matthew', 'English', 1), (2, 'Nisha', 'Science', 0), (3, 'Natasha', 'Math', 1), (4, 'Ben', 'English', 0)]`
 
 
+Você pode até passar consultas SQL mais complexas. No nosso caso, estamos selecionando as colunas Nome e Principais onde os alunos foram aprovados no exame.
+```python
 output = conn.execute("SELECT Name, Major FROM Student WHERE Pass = True")
 print(output.fetchall())
+```
 
- OpenAI
-Output:
+`[('Matthew', 'English'), ('Natasha', 'Math')]`
 
+### Usando API SQLAlchemy
+Nas seções anteriores, usamos API/objetos SQLAlchemy simples. Vamos mergulhar em consultas mais complexas e com várias etapas.
 
-[('Matthew', 'English'), ('Natasha', 'Math')]
+No exemplo abaixo, selecionaremos todas as colunas onde a especialização do aluno é Inglês.
 
- OpenAI
-Using SQLAlchemy API
-In the previous sections, we have been using simple SQLAlchemy API/Objects. Let’s dive into more complex and multi-step queries.
-
-In the example below, we will select all columns where the student's major is English.  
-
-
+```python
 query = Student.select().where(Student.columns.Major == 'English')
 output = conn.execute(query)
 print(output.fetchall())
+```
 
- OpenAI
-Output:
-
-
-[(1, 'Matthew', 'English', True), (4, 'Ben', 'English', False)]
-
- OpenAI
-Let’s apply AND logic to the WHERE query. 
-
-In our case, we are looking for students who have an English major, and they have failed.  
-
-Note: not equal to ‘!=’ True is False. 
+`[(1, 'Matthew', 'English', True), (4, 'Ben', 'English', False)]`
 
 
+Vamos aplicar a lógica AND à consulta WHERE.
+
+No nosso caso, procuramos alunos com especialização em inglês e que foram reprovados.
+
+Nota: diferente de ‘!=’ Verdadeiro é Falso.
+
+```python
 query = Student.select().where(db.and_(Student.columns.Major == 'English', Student.columns.Pass != True))
 output = conn.execute(query)
 print(output.fetchall())
+```
+Apenas Ben foi reprovado no exame com especialização em inglês.
 
- OpenAI
-Only Ben has failed the exam with an English major. 
+
+`[(4, 'Ben', 'English', False)]`
 
 
-[(4, 'Ben', 'English', False)]
+Usando uma tabela semelhante, podemos executar todos os tipos de comandos, conforme mostrado na tabela abaixo.
 
- OpenAI
-Using a similar table, we can run all kinds of commands, as shown in the table below. 
+Você pode copiar e colar esses comandos para testar os resultados por conta própria. Confira o espaço de trabalho do DataCamp se você ficar preso em algum dos comandos fornecidos.
 
-You can copy and paste these commands to test the results on your own. Check out the DataCamp’s Workspace if you get stuck in any of the given commands. 
 
-Commands
-
-API
-
-in
+`in`
 
 Student.select().where(Student.columns.Major.in_(['English','Math']))
 
-and, or, not
+`and, or, not`
 
 Student.select().where(db.or_(Student.columns.Major == 'English', Student.columns.Pass = True))
 
-order by
+`order by`
 
 Student.select().order_by(db.desc(Student.columns.Name))
 
-limit
+`limit`
 
 Student.select().limit(3)
 
-sum, avg, count, min, max
+`sum, avg, count, min, max`
 
 db.select([db.func.sum(Student.columns.Id)])
 
-group by
+`group by`
 
 db.select([db.func.sum(Student.columns.Id),Student.columns.Major]).group_by(Student.columns.Pass)
 
-distinct
+`distinct`
 
 db.select([Student.columns.Major.distinct()])
 
-To learn about other functions and commands, check out SQL Statements and Expressions API official documentation.
+Para aprender sobre outras funções e comandos, verifique a documentação oficial da API de instruções e expressões SQL.
 
-Output to Pandas DataFrame
-Data scientists and analysts appreciate pandas dataframes and would love to work with them. In this part, we will learn how to convert an SQLAlchemy query result into a pandas dataframe. 
+## Saída para Pandas DataFrame
+Cientistas e analistas de dados apreciam os dataframes do pandas e adorariam trabalhar com eles. Nesta parte, aprenderemos como converter o resultado de uma consulta SQLAlchemy em um dataframe do pandas.
 
-First, execute the query and save the results. 
+Primeiro, execute a consulta e salve os resultados.
 
-
+```python
 query = Student.select().where(Student.columns.Major.in_(['English','Math']))
 output = conn.execute(query)
 results = output.fetchall()
+```
 
- OpenAI
-Then, use the DataFrame function and provide the SQL results as an argument. Finally, add the column names using the result first-row `results[0]` and `.keys()`
+Em seguida, use a função DataFrame e forneça os resultados SQL como argumento. Por fim, adicione os nomes das colunas usando o resultado da primeira linha `results[0]` e `.keys()`
 
-Note: you can provide any valid row to extract the names of the columns using `keys()`
-
-
+Nota: você pode fornecer qualquer linha válida para extrair os nomes das colunas usando `keys()`
+Abrir no Google Tradutor
+```python
 data = pd.DataFrame(results)
 data.columns = results[0].keys()
 data
+```
+### Análise de dados com SQLAlchemy
+Nesta parte iremos conectar a base de dados do futebol europeu e realizar consultas complexas e visualizar os resultados.
 
- OpenAI
-Output to Pandas DataFrame
-Data Analytics With SQLAlchemy
-In this part, we will connect the European football database and perform complex queries and visualize the results.  
+Conectando duas tabelas
+Como de costume, conectaremos o banco de dados usando as funções `create_engine` e `connect`.
 
-Connecting two tables
-As usual, we will connect the database using the `create_engine` and `connect` functions.
-
-In our case, we will be joining two tables, so we have to create two table objects: division and match.  
-
-
+No nosso caso estaremos juntando duas tabelas, então temos que criar dois objetos de tabela: divisão e correspondência.
+```python
 engine = create_engine("sqlite:///european_database.sqlite")
 conn = engine.connect()
 metadata = db.MetaData()
 division = db.Table('divisions', metadata, autoload=True, autoload_with=engine)
 match = db.Table('matchs', metadata, autoload=True, autoload_with=engine)
+```
+### Executando uma consulta complexa 
+ 1. Selecionaremos colunas de divisão e correspondência.
+ 2. Junte-os usando uma coluna comum: division.division e match.Div. 
+ 3. Selecione todas as colunas onde a divisão é E1 e a temporada é 2009. 
+ 4.Ordene o resultado por HomeTeam. Você pode até criar consultas mais complexas adicionando módulos adicionais.
 
- OpenAI
-Running complex query
-We will select both division and match columns.
-Join them using a common column: division.division and match.Div.
-Select all columns where the division is E1 and the season is 2009.
-Order the result by HomeTeam.
-You can even create more complex queries by adding additional modules.
-
-Note: to auto-join two table you can also use:  `db.select([division.columns.division,match.columns.Div])`
-
-
+Nota: para juntar automaticamente duas tabelas você também pode usar: db.select([division.columns.division,match.columns.Div])
+```python
 query = db.select([division,match]).\
 select_from(division.join(match,division.columns.division == match.columns.Div)).\
 where(db.and_(division.columns.division == "E1", match.columns.season == 2009 )).\
@@ -382,31 +357,28 @@ results = output.fetchall()
 data = pd.DataFrame(results)
 data.columns = results[0].keys()
 data
+```
+### Análise de dados com SQLAlchemy
 
- OpenAI
-Data Analytics With SQLAlchemy
+Após executar a consulta, convertemos o resultado em um dataframe do pandas.
 
-After executing the query, we converted the result into a pandas dataframe. 
+Ambas as tabelas estão unidas e os resultados mostram apenas a divisão E1 da temporada de 2009 ordenada pela coluna HomeTeam.
 
-Both tables are joined, and the results only show the E1 division for the 2009 season ordered by the HomeTeam column. 
+### Visualização de dados
+Agora que temos um dataframe, podemos visualizar os resultados na forma de um gráfico de barras usando Seaborn.
 
-Data Visualization
-Now that we have a dataframe, we can visualize the results in the form of a bar chart using Seaborn. 
+1. Defina o tema como “whitegrid”
+2. Redimensione o tamanho da visualização para 15X6
+3. Gire os ticks do eixo x para 90
+4. Defina paletas de cores para “pastéis”
+5. Trace um gráfico de barras de "HomeTeam" vs "FTHG" com a cor Azul.
+6. Trace um gráfico de barras de "HomeTeam" vs "FTAG" com a cor vermelha.
+7. Exiba a legenda no canto superior esquerdo.
+8. Remova os rótulos x e y.
+9. Despine para a esquerda e para baixo.
+O objetivo principal desta parte é mostrar como você pode usar a saída da consulta SQL e criar visualizações de dados incríveis.
 
-We will:
-
-Set the theme to “whitegrid”
-Resize the visualization size to 15X6
-Rotate x-axis ticks to 90
-Set color palates to “pastels”
-Plot a bar chart of "HomeTeam" v.s "FTHG" with the color Blue.
-Plot a bar chart of "HomeTeam" v.s "FTAG" with the color Red.
-Display the legend on the upper left.
-Remove the x and y labels. 
-Despine left and bottom.
-The main purpose of this part is to show you how you can use the output of the SQL query and create amazing data visualization. 
-
-
+```python
 import seaborn as sns
 import matplotlib.pyplot as plt
 sns.set_theme(style="whitegrid")
@@ -422,65 +394,64 @@ sns.barplot(x="HomeTeam", y="FTAG", data=data,
 ax.legend(ncol=2, loc="upper left", frameon=True)
 ax.set(ylabel="", xlabel="")
 sns.despine(left=True, bottom=True)
+```
 
- OpenAI
-Data Visualization with SQLAlchemy
-Saving Results to CSV
-After converting the query result to pandas dataframe, you can simply use the '.to_csv' function with the file name. 
+### Visualização de dados com SQLAlchemy
+Salvando resultados em CSV
+Depois de converter o resultado da consulta para o dataframe do pandas, você pode simplesmente usar a função '.to_csv' com o nome do arquivo.
 
-
+```python
 output = conn.execute("SELECT * FROM matchs WHERE HomeTeam LIKE 'Norwich'")
 results = output.fetchall()
 
 
 data = pd.DataFrame(results)
 data.columns = results[0].keys()
-
- OpenAI
-Avoid adding a column called “Index” by using `index=False`.
+```
 
 
+Evite adicionar uma coluna chamada “Index” usando `index=False`.
+
+```python
 data.to_csv("SQl_result.csv",index=False)
+```
 
- OpenAI
-CSV file to SQL Table
-In this part, we will convert the Stock Exchange Data CSV file to an SQL table. 
+### Arquivo CSV para tabela SQL
+Nesta parte, converteremos o arquivo CSV de dados da Bolsa de Valores em uma tabela SQL.
 
-First, connect to the datacamp sqlite database.
+Primeiro, conecte-se ao banco de dados sqlite do datacamp.
 
-
+```python
 engine = create_engine("sqlite:///datacamp.sqlite")
+```
+Em seguida, importe o arquivo CSV usando a função read_csv. No final, use a função `to_sql` para salvar o dataframe do pandas como uma tabela SQL.
 
- OpenAI
-Then, import the CSV file using the read_csv function. In the end, use the `to_sql` function to save the pandas dataframe as an SQL table.  
+Principalmente, a função `to_sql` requer conexão e nome da tabela como argumento. Você também pode usar `if_exisits` para substituir uma tabela existente com o mesmo nome e `index` para eliminar a coluna do índice.
 
-Primarily, the `to_sql` function requires connection and table name as an argument. You can also use `if_exisits` to replace an existing table with the same name and `index` to drop the index column. 
-
-
+```python
 df = pd.read_csv('Stock Exchange Data.csv')
 df.to_sql(con=engine, name="Stock_price", if_exists='replace', index=False)
->>> 2222
-
- OpenAI
-To validate the results, we need to connect the database and create a table object. 
+```
 
 
+Para validar os resultados, precisamos conectar o banco de dados e criar um objeto tabela.
+
+```python
 conn = engine.connect()
 metadata = db.MetaData()
 stock = db.Table('Stock_price', metadata, autoload=True, autoload_with=engine)
+```
+ 
+Em seguida, execute a consulta e exiba os resultados.
 
- OpenAI
-Then, execute the query and display the results.
-
-
+```python
 query = stock.select()
 exe = conn.execute(query)
 result = exe.fetchmany(5)
 for r in result:
     print(r)
-
- OpenAI
-As you can see, we have successfully transferred all the values from the CSV file to the SQL table. 
+```
+Como você pode ver, transferimos com sucesso todos os valores do arquivo CSV para a tabela SQL.
 
 
 ('HSI', '1986-12-31', 2568.300049, 2568.300049, 2568.300049, 2568.300049, 2568.300049, 0, 333.87900637)
@@ -489,81 +460,72 @@ As you can see, we have successfully transferred all the values from the CSV fil
 ('HSI', '1987-01-06', 2583.899902, 2583.899902, 2583.899902, 2583.899902, 2583.899902, 0, 335.90698726)
 ('HSI', '1987-01-07', 2607.100098, 2607.100098, 2607.100098, 2607.100098, 2607.100098, 0, 338.92301274)
 
- OpenAI
-SQL Table Management
-Updating the values in table
-Updating values is straightforward. We will use the update, values, and where functions to update the specific value in the table. 
 
-
+### Gerenciamento de tabelas SQL
+#### Atualizando os valores na tabela
+Atualizar valores é simples. Usaremos as funções update, valores e where para atualizar o valor específico na tabela.
+```python
 table.update().values(column_1=1, column_2=4,...).where(table.columns.column_5 >= 5)
+```
 
- OpenAI
-In our case, we have changed the “Pass” value from False to True where the name of the student is “Nisha”.  
+No nosso caso, alteramos o valor “Pass” de False para True onde o nome do aluno é “Nisha”.
 
-
+```python
 Student = db.Table('Student', metadata, autoload=True, autoload_with=engine)
 query = Student.update().values(Pass = True).where(Student.columns.Name == "Nisha")
 results = conn.execute(query)
+```
 
- OpenAI
-To validate the results, let’s execute a simple query and display the results in the form of a pandas dataframe. 
+Para validar os resultados, vamos executar uma consulta simples e exibir os resultados na forma de um dataframe do pandas.
 
-
+```python
 output = conn.execute(Student.select()).fetchall()
 data = pd.DataFrame(output)
 data.columns = output[0].keys()
 data
+```
 
- OpenAI
-We have successfully changed the “Pass” value to True for the student name “Nisha”.
-
-Update values in SQL
-Delete the records
-Deleting the rows is similar to updating. It requires delete and where function. 
+Alteramos com sucesso o valor “Pass” para True para o nome do aluno “Nisha”.
 
 
+### Excluir os registros
+Excluir as linhas é semelhante à atualização. Requer a função delete e where.
+```python
 table.delete().where(table.columns.column_1 == 6)
+```
 
- OpenAI
-In our case, we are deleting the record of the student named “Ben”.
+No nosso caso, estamos excluindo o cadastro do aluno chamado “Ben”.
 
+```python
 
 Student = db.Table('Student', metadata, autoload=True, autoload_with=engine)
 query = Student.delete().where(Student.columns.Name == "Ben")
 results = conn.execute(query)
+```
+ 
+Para validar os resultados, executaremos uma consulta rápida e exibiremos os resultados na forma de um dataframe. Como você pode ver, excluímos a linha que contém o nome do aluno “Ben”.
 
- OpenAI
-To validate the results, we will run a quick query and display the results in the form of a dataframe. As you can see, we have deleted the row containing the student name ”Ben”.
-
-
+```python
 output = conn.execute(Student.select()).fetchall()
 data = pd.DataFrame(output)
 data.columns = output[0].keys()
 data
+```
+### Deletando tabelas
+Se você estiver usando SQLite, eliminar a tabela gerará um erro “banco de dados está bloqueado“. Por que? Porque SQLite é uma versão muito leve. Ele só pode executar uma função por vez. Atualmente, ele está executando uma consulta selecionada. Precisamos fechar toda a execução antes de deletar a tabela.
 
- OpenAI
-Delete Values
-Dropping tables
-If you are using SQLite, dropping the table will throw an error “database is locked“. Why? Because SQLite is a very light version. It can only perform one function at a time. Currently, it is executing a select query. We need to close all of the execution before deleting the table. 
-
-
+```python
 results.close()
 exe.close()
+```
 
- OpenAI
-After that, use metadata’s drop_all function and select a table object to drop the single table. You can also use the `Student.drop(engine)` command to drop a single table.
-
-
+Depois disso, use a função drop_all dos metadados e selecione um objeto de tabela para eliminar a tabela única. Você também pode usar o comando `Student.drop(engine)` para eliminar uma única tabela.
+```python
 metadata.drop_all(engine, [Student], checkfirst=True)
+```
 
- OpenAI
-If you don’t specify any table for the drop_all function. It will drop all of the tables in the database. 
+Se você não especificar nenhuma tabela para a função drop_all. Isso eliminará todas as tabelas do banco de dados.
 
-
+```python
 metadata.drop_all(engine)
-
- OpenAI
-Conclusion 
-The SQLAlchemy tutorial covers various functions of SQLAlchemy, from connecting the database to modifying tables, and if you are interested in learning more, try completing the Introduction to Databases in Python interactive course. You will learn about the basics of relational databases, filtering, ordering, and grouping. Furthermore, you will learn about advanced SQLAlchemy functions for data manipulation.  
-
-If you are finding any issues in following the tutorial, you can run the source code using workspace and compare your code with it. You can even duplicate the Jupyter notebook and run the code by clicking just two buttons.  
+```
