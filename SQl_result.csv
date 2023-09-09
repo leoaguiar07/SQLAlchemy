@@ -1,0 +1,349 @@
+Div,Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,season
+E1,2020-09-19,Norwich,Preston,2.0,2.0,D,2021
+E1,2020-10-03,Norwich,Derby,0.0,1.0,A,2021
+E1,2020-10-20,Norwich,Birmingham,1.0,0.0,H,2021
+E1,2020-10-24,Norwich,Wycombe,2.0,1.0,H,2021
+E1,2020-11-03,Norwich,Millwall,0.0,0.0,D,2021
+E1,2020-11-07,Norwich,Swansea,1.0,0.0,H,2021
+E1,2020-11-28,Norwich,Coventry,1.0,1.0,D,2021
+E1,2020-12-05,Norwich,Sheffield Weds,2.0,1.0,H,2021
+E1,2020-12-09,Norwich,Nott'm Forest,2.0,1.0,H,2021
+E1,2020-12-19,Norwich,Cardiff,2.0,0.0,H,2021
+E1,2020-12-29,Norwich,QPR,1.0,1.0,D,2021
+E1,2021-01-02,Norwich,Barnsley,1.0,0.0,H,2021
+E1,2021-01-20,Norwich,Bristol City,2.0,0.0,H,2021
+E1,2021-01-30,Norwich,Middlesbrough,0.0,0.0,D,2021
+E1,2021-02-13,Norwich,Stoke,4.0,1.0,H,2021
+E1,2021-02-20,Norwich,Rotherham,1.0,0.0,H,2021
+E1,2021-03-03,Norwich,Brentford,1.0,0.0,H,2021
+E1,2021-03-06,Norwich,Luton,3.0,0.0,H,2021
+E1,2021-03-20,Norwich,Blackburn,1.0,1.0,D,2021
+E1,2021-04-06,Norwich,Huddersfield,7.0,0.0,H,2021
+E1,2021-04-17,Norwich,Bournemouth,1.0,3.0,A,2021
+E1,2021-04-20,Norwich,Watford,0.0,1.0,A,2021
+E1,2021-05-01,Norwich,Reading,4.0,1.0,H,2021
+E0,2019-08-17,Norwich,Newcastle,3.0,1.0,H,2020
+E0,2019-08-24,Norwich,Chelsea,2.0,3.0,A,2020
+E0,2019-09-14,Norwich,Man City,3.0,2.0,H,2020
+E0,2019-10-05,Norwich,Aston Villa,1.0,5.0,A,2020
+E0,2019-10-27,Norwich,Man United,1.0,3.0,A,2020
+E0,2019-11-08,Norwich,Watford,0.0,2.0,A,2020
+E0,2019-12-01,Norwich,Arsenal,2.0,2.0,D,2020
+E0,2019-12-08,Norwich,Sheffield United,1.0,2.0,A,2020
+E0,2019-12-21,Norwich,Wolves,1.0,2.0,A,2020
+E0,2019-12-28,Norwich,Tottenham,2.0,2.0,D,2020
+E0,2020-01-01,Norwich,Crystal Palace,1.0,1.0,D,2020
+E0,2020-01-18,Norwich,Bournemouth,1.0,0.0,H,2020
+E0,2020-02-15,Norwich,Liverpool,0.0,1.0,A,2020
+E0,2020-02-28,Norwich,Leicester,1.0,0.0,H,2020
+E0,2020-06-19,Norwich,Southampton,0.0,3.0,A,2020
+E0,2020-06-24,Norwich,Everton,0.0,1.0,A,2020
+E0,2020-07-04,Norwich,Brighton,0.0,1.0,A,2020
+E0,2020-07-11,Norwich,West Ham,0.0,4.0,A,2020
+E0,2020-07-18,Norwich,Burnley,0.0,2.0,A,2020
+E1,2018-08-11,Norwich,West Brom,3.0,4.0,A,2019
+E1,2018-08-22,Norwich,Preston,2.0,0.0,H,2019
+E1,2018-08-25,Norwich,Leeds,0.0,3.0,A,2019
+E1,2018-09-15,Norwich,Middlesbrough,1.0,0.0,H,2019
+E1,2018-09-29,Norwich,Wigan,1.0,0.0,H,2019
+E1,2018-10-06,Norwich,Stoke,0.0,1.0,A,2019
+E1,2018-10-23,Norwich,Aston Villa,2.0,1.0,H,2019
+E1,2018-10-27,Norwich,Brentford,1.0,0.0,H,2019
+E1,2018-11-10,Norwich,Millwall,4.0,3.0,H,2019
+E1,2018-12-01,Norwich,Rotherham,3.0,1.0,H,2019
+E1,2018-12-08,Norwich,Bolton,3.0,2.0,H,2019
+E1,2018-12-26,Norwich,Nott'm Forest,3.0,3.0,D,2019
+E1,2018-12-29,Norwich,Derby,3.0,4.0,A,2019
+E1,2019-01-18,Norwich,Birmingham,3.0,1.0,H,2019
+E1,2019-01-26,Norwich,Sheffield United,2.0,2.0,D,2019
+E1,2019-02-10,Norwich,Ipswich,3.0,0.0,H,2019
+E1,2019-02-23,Norwich,Bristol City,3.0,2.0,H,2019
+E1,2019-03-08,Norwich,Swansea,1.0,0.0,H,2019
+E1,2019-03-13,Norwich,Hull,3.0,2.0,H,2019
+E1,2019-04-06,Norwich,QPR,4.0,0.0,H,2019
+E1,2019-04-10,Norwich,Reading,2.0,2.0,D,2019
+E1,2019-04-19,Norwich,Sheffield Weds,2.0,2.0,D,2019
+E1,2019-04-27,Norwich,Blackburn,2.0,1.0,H,2019
+E1,2017-08-13,Norwich,Sunderland,1.0,3.0,A,2018
+E1,2017-08-16,Norwich,QPR,2.0,0.0,H,2018
+E1,2017-09-09,Norwich,Birmingham,1.0,0.0,H,2018
+E1,2017-09-12,Norwich,Burton,0.0,0.0,D,2018
+E1,2017-09-23,Norwich,Bristol City,0.0,0.0,D,2018
+E1,2017-10-14,Norwich,Hull,1.0,1.0,D,2018
+E1,2017-10-28,Norwich,Derby,1.0,2.0,A,2018
+E1,2017-10-31,Norwich,Wolves,0.0,2.0,A,2018
+E1,2017-11-18,Norwich,Barnsley,1.0,1.0,D,2018
+E1,2017-11-25,Norwich,Preston,1.0,1.0,D,2018
+E1,2017-12-09,Norwich,Sheffield Weds,3.0,1.0,H,2018
+E1,2017-12-22,Norwich,Brentford,1.0,2.0,A,2018
+E1,2018-01-01,Norwich,Millwall,2.0,1.0,H,2018
+E1,2018-01-20,Norwich,Sheffield United,1.0,2.0,A,2018
+E1,2018-02-03,Norwich,Middlesbrough,1.0,0.0,H,2018
+E1,2018-02-18,Norwich,Ipswich,1.0,1.0,D,2018
+E1,2018-02-24,Norwich,Bolton,0.0,0.0,D,2018
+E1,2018-03-06,Norwich,Nott'm Forest,0.0,0.0,D,2018
+E1,2018-03-17,Norwich,Reading,3.0,2.0,H,2018
+E1,2018-03-30,Norwich,Fulham,0.0,2.0,A,2018
+E1,2018-04-07,Norwich,Aston Villa,3.0,1.0,H,2018
+E1,2018-04-14,Norwich,Cardiff,0.0,2.0,A,2018
+E1,2018-04-28,Norwich,Leeds,2.0,1.0,H,2018
+E1,2016-08-13,Norwich,Sheffield Weds,0.0,0.0,D,2017
+E1,2016-08-16,Norwich,Bristol City,1.0,0.0,H,2017
+E1,2016-09-10,Norwich,Cardiff,3.0,2.0,H,2017
+E1,2016-09-13,Norwich,Wigan,2.0,1.0,H,2017
+E1,2016-09-24,Norwich,Burton,3.0,1.0,H,2017
+E1,2016-10-15,Norwich,Rotherham,3.0,1.0,H,2017
+E1,2016-10-22,Norwich,Preston,0.0,1.0,A,2017
+E1,2016-11-05,Norwich,Leeds,2.0,3.0,A,2017
+E1,2016-12-03,Norwich,Brentford,5.0,0.0,H,2017
+E1,2016-12-13,Norwich,Aston Villa,1.0,0.0,H,2017
+E1,2016-12-16,Norwich,Huddersfield,1.0,2.0,A,2017
+E1,2017-01-02,Norwich,Derby,3.0,0.0,H,2017
+E1,2017-01-21,Norwich,Wolves,3.0,1.0,H,2017
+E1,2017-01-28,Norwich,Birmingham,2.0,0.0,H,2017
+E1,2017-02-11,Norwich,Nott'm Forest,5.0,1.0,H,2017
+E1,2017-02-14,Norwich,Newcastle,2.0,2.0,D,2017
+E1,2017-02-26,Norwich,Ipswich,1.0,1.0,D,2017
+E1,2017-03-11,Norwich,Blackburn,2.0,2.0,D,2017
+E1,2017-03-18,Norwich,Barnsley,2.0,0.0,H,2017
+E1,2017-04-08,Norwich,Reading,7.0,1.0,H,2017
+E1,2017-04-14,Norwich,Fulham,1.0,3.0,A,2017
+E1,2017-04-21,Norwich,Brighton,2.0,0.0,H,2017
+E1,2017-05-07,Norwich,QPR,4.0,0.0,H,2017
+E0,2015-08-08,Norwich,Crystal Palace,1.0,3.0,A,2016
+E0,2015-08-22,Norwich,Stoke,1.0,1.0,D,2016
+E0,2015-09-12,Norwich,Bournemouth,3.0,1.0,H,2016
+E0,2015-10-03,Norwich,Leicester,1.0,2.0,A,2016
+E0,2015-10-24,Norwich,West Brom,0.0,1.0,A,2016
+E0,2015-11-07,Norwich,Swansea,1.0,0.0,H,2016
+E0,2015-11-29,Norwich,Arsenal,1.0,1.0,D,2016
+E0,2015-12-12,Norwich,Everton,1.0,1.0,D,2016
+E0,2015-12-28,Norwich,Aston Villa,2.0,0.0,H,2016
+E0,2016-01-02,Norwich,Southampton,1.0,0.0,H,2016
+E0,2016-01-23,Norwich,Liverpool,4.0,5.0,A,2016
+E0,2016-02-02,Norwich,Tottenham,0.0,3.0,A,2016
+E0,2016-02-13,Norwich,West Ham,2.0,2.0,D,2016
+E0,2016-03-01,Norwich,Chelsea,1.0,2.0,A,2016
+E0,2016-03-12,Norwich,Man City,0.0,0.0,D,2016
+E0,2016-04-02,Norwich,Newcastle,3.0,2.0,H,2016
+E0,2016-04-16,Norwich,Sunderland,0.0,3.0,A,2016
+E0,2016-05-07,Norwich,Man United,0.0,1.0,A,2016
+E0,2016-05-11,Norwich,Watford,4.0,2.0,H,2016
+E1,2014-08-16,Norwich,Watford,3.0,0.0,H,2015
+E1,2014-08-19,Norwich,Blackburn,3.0,1.0,H,2015
+E1,2014-08-30,Norwich,Bournemouth,1.0,1.0,D,2015
+E1,2014-09-20,Norwich,Birmingham,2.0,2.0,D,2015
+E1,2014-09-30,Norwich,Charlton,0.0,1.0,A,2015
+E1,2014-10-04,Norwich,Rotherham,1.0,1.0,D,2015
+E1,2014-10-21,Norwich,Leeds,1.0,1.0,D,2015
+E1,2014-10-31,Norwich,Bolton,2.0,1.0,H,2015
+E1,2014-11-22,Norwich,Brighton,3.0,3.0,D,2015
+E1,2014-11-29,Norwich,Reading,1.0,2.0,A,2015
+E1,2014-12-13,Norwich,Huddersfield,5.0,0.0,H,2015
+E1,2014-12-26,Norwich,Millwall,6.0,1.0,H,2015
+E1,2015-01-17,Norwich,Cardiff,3.0,2.0,H,2015
+E1,2015-01-24,Norwich,Brentford,1.0,2.0,A,2015
+E1,2015-02-07,Norwich,Blackpool,4.0,0.0,H,2015
+E1,2015-02-14,Norwich,Wolves,2.0,0.0,H,2015
+E1,2015-03-01,Norwich,Ipswich,2.0,0.0,H,2015
+E1,2015-03-04,Norwich,Wigan,0.0,1.0,A,2015
+E1,2015-03-14,Norwich,Derby,1.0,1.0,D,2015
+E1,2015-03-21,Norwich,Nott'm Forest,3.0,1.0,H,2015
+E1,2015-04-06,Norwich,Sheffield Weds,2.0,0.0,H,2015
+E1,2015-04-17,Norwich,Middlesbrough,0.0,1.0,A,2015
+E1,2015-05-02,Norwich,Fulham,4.0,2.0,H,2015
+E0,2013-08-17,Norwich,Everton,2.0,2.0,D,2014
+E0,2013-08-31,Norwich,Southampton,1.0,0.0,H,2014
+E0,2013-09-21,Norwich,Aston Villa,0.0,1.0,A,2014
+E0,2013-10-06,Norwich,Chelsea,1.0,3.0,A,2014
+E0,2013-10-26,Norwich,Cardiff,0.0,0.0,D,2014
+E0,2013-11-09,Norwich,West Ham,3.0,1.0,H,2014
+E0,2013-11-30,Norwich,Crystal Palace,1.0,0.0,H,2014
+E0,2013-12-15,Norwich,Swansea,1.0,1.0,D,2014
+E0,2013-12-26,Norwich,Fulham,1.0,2.0,A,2014
+E0,2013-12-28,Norwich,Man United,0.0,1.0,A,2014
+E0,2014-01-18,Norwich,Hull,1.0,0.0,H,2014
+E0,2014-01-28,Norwich,Newcastle,0.0,0.0,D,2014
+E0,2014-02-08,Norwich,Man City,0.0,0.0,D,2014
+E0,2014-02-23,Norwich,Tottenham,1.0,0.0,H,2014
+E0,2014-03-08,Norwich,Stoke,1.0,1.0,D,2014
+E0,2014-03-22,Norwich,Sunderland,2.0,0.0,H,2014
+E0,2014-04-05,Norwich,West Brom,0.0,1.0,A,2014
+E0,2014-04-20,Norwich,Liverpool,2.0,3.0,A,2014
+E0,2014-05-11,Norwich,Arsenal,0.0,2.0,A,2014
+E0,2012-08-25,Norwich,QPR,1.0,1.0,D,2013
+E0,2012-09-15,Norwich,West Ham,0.0,0.0,D,2013
+E0,2012-09-29,Norwich,Liverpool,2.0,5.0,A,2013
+E0,2012-10-20,Norwich,Arsenal,1.0,0.0,H,2013
+E0,2012-11-03,Norwich,Stoke,1.0,0.0,H,2013
+E0,2012-11-17,Norwich,Man United,1.0,0.0,H,2013
+E0,2012-12-02,Norwich,Sunderland,2.0,1.0,H,2013
+E0,2012-12-15,Norwich,Wigan,2.0,1.0,H,2013
+E0,2012-12-26,Norwich,Chelsea,0.0,1.0,A,2013
+E0,2012-12-29,Norwich,Man City,3.0,4.0,A,2013
+E0,2013-01-12,Norwich,Newcastle,0.0,0.0,D,2013
+E0,2013-01-30,Norwich,Tottenham,1.0,1.0,D,2013
+E0,2013-02-09,Norwich,Fulham,0.0,0.0,D,2013
+E0,2013-02-23,Norwich,Everton,2.0,1.0,H,2013
+E0,2013-03-09,Norwich,Southampton,0.0,0.0,D,2013
+E0,2013-04-06,Norwich,Swansea,2.0,2.0,D,2013
+E0,2013-04-20,Norwich,Reading,2.0,1.0,H,2013
+E0,2013-05-04,Norwich,Aston Villa,1.0,2.0,A,2013
+E0,2013-05-12,Norwich,West Brom,4.0,0.0,H,2013
+E0,2011-08-21,Norwich,Stoke,1.0,1.0,D,2012
+E0,2011-09-11,Norwich,West Brom,0.0,1.0,A,2012
+E0,2011-09-26,Norwich,Sunderland,2.0,1.0,H,2012
+E0,2011-10-15,Norwich,Swansea,3.0,1.0,H,2012
+E0,2011-10-29,Norwich,Blackburn,3.0,3.0,D,2012
+E0,2011-11-19,Norwich,Arsenal,1.0,2.0,A,2012
+E0,2011-11-26,Norwich,QPR,2.0,1.0,H,2012
+E0,2011-12-10,Norwich,Newcastle,4.0,2.0,H,2012
+E0,2011-12-27,Norwich,Tottenham,0.0,2.0,A,2012
+E0,2011-12-31,Norwich,Fulham,1.0,1.0,D,2012
+E0,2012-01-21,Norwich,Chelsea,0.0,0.0,D,2012
+E0,2012-02-04,Norwich,Bolton,2.0,0.0,H,2012
+E0,2012-02-26,Norwich,Man United,1.0,2.0,A,2012
+E0,2012-03-11,Norwich,Wigan,1.0,1.0,D,2012
+E0,2012-03-24,Norwich,Wolves,2.0,1.0,H,2012
+E0,2012-04-07,Norwich,Everton,2.0,2.0,D,2012
+E0,2012-04-14,Norwich,Man City,1.0,6.0,A,2012
+E0,2012-04-28,Norwich,Liverpool,0.0,3.0,A,2012
+E0,2012-05-13,Norwich,Aston Villa,2.0,0.0,H,2012
+E1,2010-08-06,Norwich,Watford,2.0,3.0,A,2011
+E1,2010-08-21,Norwich,Swansea,2.0,0.0,H,2011
+E1,2010-09-11,Norwich,Barnsley,2.0,1.0,H,2011
+E1,2010-09-25,Norwich,Hull,0.0,2.0,A,2011
+E1,2010-09-28,Norwich,Leicester,4.0,3.0,H,2011
+E1,2010-10-19,Norwich,Crystal Palace,1.0,2.0,A,2011
+E1,2010-10-23,Norwich,Middlesbrough,1.0,0.0,H,2011
+E1,2010-11-06,Norwich,Burnley,2.0,2.0,D,2011
+E1,2010-11-20,Norwich,Leeds,1.0,1.0,D,2011
+E1,2010-11-28,Norwich,Ipswich,4.0,1.0,H,2011
+E1,2010-12-11,Norwich,Portsmouth,0.0,2.0,A,2011
+E1,2010-12-28,Norwich,Sheffield United,4.0,2.0,H,2011
+E1,2011-01-01,Norwich,QPR,1.0,0.0,H,2011
+E1,2011-01-15,Norwich,Cardiff,1.0,1.0,D,2011
+E1,2011-02-01,Norwich,Millwall,2.0,1.0,H,2011
+E1,2011-02-12,Norwich,Reading,2.0,1.0,H,2011
+E1,2011-02-22,Norwich,Doncaster,1.0,1.0,D,2011
+E1,2011-03-05,Norwich,Preston,1.0,1.0,D,2011
+E1,2011-03-14,Norwich,Bristol City,3.0,1.0,H,2011
+E1,2011-04-02,Norwich,Scunthorpe,6.0,0.0,H,2011
+E1,2011-04-15,Norwich,Nott'm Forest,2.0,1.0,H,2011
+E1,2011-04-25,Norwich,Derby,3.0,2.0,H,2011
+E1,2011-05-07,Norwich,Coventry,2.0,2.0,D,2011
+E2,2009-08-08,Norwich,Colchester,1.0,7.0,A,2010
+E2,2009-08-22,Norwich,Wycombe,5.0,2.0,H,2010
+E2,2009-09-05,Norwich,Walsall,0.0,0.0,D,2010
+E2,2009-09-19,Norwich,Charlton,2.0,2.0,D,2010
+E2,2009-09-29,Norwich,Leyton Orient,4.0,0.0,H,2010
+E2,2009-10-03,Norwich,Bristol Rvs,5.0,1.0,H,2010
+E2,2009-10-24,Norwich,Swindon,1.0,0.0,H,2010
+E2,2009-11-14,Norwich,Tranmere,2.0,0.0,H,2010
+E2,2009-11-24,Norwich,Brighton,4.0,1.0,H,2010
+E2,2009-12-05,Norwich,Oldham,2.0,0.0,H,2010
+E2,2009-12-19,Norwich,Huddersfield,3.0,0.0,H,2010
+E2,2009-12-26,Norwich,Millwall,2.0,0.0,H,2010
+E2,2010-01-09,Norwich,Exeter,3.0,1.0,H,2010
+E2,2010-01-23,Norwich,Brentford,1.0,0.0,H,2010
+E2,2010-01-30,Norwich,Hartlepool,2.0,1.0,H,2010
+E2,2010-02-20,Norwich,Southampton,0.0,2.0,A,2010
+E2,2010-02-23,Norwich,Southend,2.0,1.0,H,2010
+E2,2010-03-06,Norwich,Yeovil,3.0,0.0,H,2010
+E2,2010-03-27,Norwich,Leeds,1.0,0.0,H,2010
+E2,2010-04-05,Norwich,Stockport,2.0,1.0,H,2010
+E2,2010-04-10,Norwich,Milton Keynes Dons,1.0,1.0,D,2010
+E2,2010-04-24,Norwich,Gillingham,2.0,0.0,H,2010
+E2,2010-05-08,Norwich,Carlisle,0.0,2.0,A,2010
+E1,2008-08-16,Norwich,Blackpool,1.0,1.0,D,2009
+E1,2008-08-30,Norwich,Birmingham,1.0,1.0,D,2009
+E1,2008-09-17,Norwich,QPR,0.0,1.0,A,2009
+E1,2008-09-20,Norwich,Sheffield United,1.0,0.0,H,2009
+E1,2008-10-04,Norwich,Derby,1.0,2.0,A,2009
+E1,2008-10-21,Norwich,Wolves,5.0,2.0,H,2009
+E1,2008-10-25,Norwich,Doncaster,2.0,1.0,H,2009
+E1,2008-11-08,Norwich,Preston,2.0,2.0,D,2009
+E1,2008-11-15,Norwich,Swansea,2.0,3.0,A,2009
+E1,2008-11-25,Norwich,Crystal Palace,1.0,2.0,A,2009
+E1,2008-12-07,Norwich,Ipswich,2.0,0.0,H,2009
+E1,2008-12-20,Norwich,Charlton,1.0,0.0,H,2009
+E1,2008-12-28,Norwich,Nott'm Forest,2.0,3.0,A,2009
+E1,2009-01-17,Norwich,Barnsley,4.0,0.0,H,2009
+E1,2009-01-27,Norwich,Southampton,2.0,2.0,D,2009
+E1,2009-02-07,Norwich,Bristol City,1.0,2.0,A,2009
+E1,2009-02-21,Norwich,Burnley,1.0,1.0,D,2009
+E1,2009-02-28,Norwich,Coventry,1.0,2.0,A,2009
+E1,2009-03-10,Norwich,Cardiff,2.0,0.0,H,2009
+E1,2009-03-14,Norwich,Plymouth,1.0,0.0,H,2009
+E1,2009-04-04,Norwich,Sheffield Weds,0.0,1.0,A,2009
+E1,2009-04-13,Norwich,Watford,2.0,0.0,H,2009
+E1,2009-04-27,Norwich,Reading,0.0,2.0,A,2009
+E1,2007-08-18,Norwich,Southampton,2.0,1.0,H,2008
+E1,2007-09-01,Norwich,Cardiff,1.0,2.0,A,2008
+E1,2007-09-15,Norwich,Crystal Palace,1.0,0.0,H,2008
+E1,2007-09-29,Norwich,Sheffield Weds,0.0,1.0,A,2008
+E1,2007-10-02,Norwich,Scunthorpe,0.0,0.0,D,2008
+E1,2007-10-20,Norwich,Bristol City,1.0,3.0,A,2008
+E1,2007-11-04,Norwich,Ipswich,2.0,2.0,D,2008
+E1,2007-11-06,Norwich,Watford,1.0,3.0,A,2008
+E1,2007-11-24,Norwich,Coventry,2.0,0.0,H,2008
+E1,2007-12-04,Norwich,Plymouth,2.0,1.0,H,2008
+E1,2007-12-08,Norwich,Sheffield United,1.0,0.0,H,2008
+E1,2007-12-26,Norwich,Charlton,1.0,1.0,D,2008
+E1,2007-12-29,Norwich,Wolves,1.0,1.0,D,2008
+E1,2008-01-19,Norwich,Leicester,0.0,0.0,D,2008
+E1,2008-02-02,Norwich,Preston,1.0,0.0,H,2008
+E1,2008-02-12,Norwich,Hull,1.0,1.0,D,2008
+E1,2008-02-23,Norwich,Barnsley,1.0,0.0,H,2008
+E1,2008-03-01,Norwich,Blackpool,1.0,2.0,A,2008
+E1,2008-03-11,Norwich,Stoke,0.0,1.0,A,2008
+E1,2008-03-22,Norwich,Colchester,5.0,1.0,H,2008
+E1,2008-04-05,Norwich,Burnley,2.0,0.0,H,2008
+E1,2008-04-19,Norwich,West Brom,1.0,2.0,A,2008
+E1,2008-04-26,Norwich,QPR,3.0,0.0,H,2008
+E1,2006-08-08,Norwich,Preston,2.0,0.0,H,2007
+E1,2006-08-12,Norwich,Luton,3.0,2.0,H,2007
+E1,2006-08-26,Norwich,Barnsley,5.0,1.0,H,2007
+E1,2006-09-16,Norwich,Crystal Palace,0.0,1.0,A,2007
+E1,2006-10-01,Norwich,Burnley,1.0,4.0,A,2007
+E1,2006-10-21,Norwich,Cardiff,1.0,0.0,H,2007
+E1,2006-10-31,Norwich,Colchester,1.0,1.0,D,2007
+E1,2006-11-04,Norwich,Sunderland,1.0,0.0,H,2007
+E1,2006-11-25,Norwich,Hull,1.0,1.0,D,2007
+E1,2006-11-28,Norwich,Leicester,3.0,1.0,H,2007
+E1,2006-12-09,Norwich,Sheffield Weds,1.0,2.0,A,2007
+E1,2006-12-26,Norwich,Southend,0.0,0.0,D,2007
+E1,2006-12-30,Norwich,QPR,1.0,0.0,H,2007
+E1,2007-01-13,Norwich,Plymouth,1.0,3.0,A,2007
+E1,2007-01-30,Norwich,Wolves,0.0,1.0,A,2007
+E1,2007-02-03,Norwich,Leeds,2.0,1.0,H,2007
+E1,2007-02-24,Norwich,Coventry,1.0,1.0,D,2007
+E1,2007-03-06,Norwich,Derby,1.0,2.0,A,2007
+E1,2007-03-13,Norwich,Birmingham,1.0,0.0,H,2007
+E1,2007-03-17,Norwich,Stoke,1.0,0.0,H,2007
+E1,2007-04-09,Norwich,West Brom,1.0,2.0,A,2007
+E1,2007-04-22,Norwich,Ipswich,1.0,1.0,D,2007
+E1,2007-04-28,Norwich,Southampton,0.0,1.0,A,2007
+E1,2005-08-06,Norwich,Coventry,1.0,1.0,D,2006
+E1,2005-08-09,Norwich,Crewe,1.0,1.0,D,2006
+E1,2005-08-13,Norwich,Crystal Palace,1.0,1.0,D,2006
+E1,2005-08-27,Norwich,Leeds,0.0,1.0,A,2006
+E1,2005-09-10,Norwich,Plymouth,2.0,0.0,H,2006
+E1,2005-09-24,Norwich,Reading,0.0,1.0,A,2006
+E1,2005-09-27,Norwich,Hull,2.0,1.0,H,2006
+E1,2005-10-15,Norwich,Millwall,1.0,1.0,D,2006
+E1,2005-10-29,Norwich,Sheffield Weds,0.0,1.0,A,2006
+E1,2005-11-01,Norwich,Cardiff,1.0,0.0,H,2006
+E1,2005-11-19,Norwich,Luton,2.0,0.0,H,2006
+E1,2005-12-17,Norwich,Southampton,3.0,1.0,H,2006
+E1,2005-12-28,Norwich,Burnley,2.0,1.0,H,2006
+E1,2006-01-02,Norwich,Preston,0.0,3.0,A,2006
+E1,2006-01-21,Norwich,Watford,2.0,3.0,A,2006
+E1,2006-02-05,Norwich,Ipswich,1.0,2.0,A,2006
+E1,2006-02-14,Norwich,Brighton,3.0,0.0,H,2006
+E1,2006-02-18,Norwich,Derby,2.0,0.0,H,2006
+E1,2006-03-04,Norwich,Stoke,2.0,1.0,H,2006
+E1,2006-03-18,Norwich,Sheffield United,2.0,1.0,H,2006
+E1,2006-04-01,Norwich,Leicester,2.0,1.0,H,2006
+E1,2006-04-17,Norwich,QPR,3.0,2.0,H,2006
+E1,2006-04-30,Norwich,Wolves,1.0,2.0,A,2006
