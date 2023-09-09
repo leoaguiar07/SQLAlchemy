@@ -1,4 +1,4 @@
-![capa](https://a.neko.red/mk/dcf3c9e6-7972-45dc-bffa-ab32bea347b6.jpg)
+![capa](https://github.com/leoaguiar07/SQLAlchemy/blob/main/SQLAlchemy.jpg)
 
 ## O que é SQLAlchemy?
 SQLAlchemy é o kit de ferramentas Python SQL que permite aos desenvolvedores acessar e gerenciar bancos de dados SQL usando a linguagem de domínio Pythonic. Você pode escrever uma consulta na forma de uma string ou cadeia de objetos Python para consultas semelhantes. Trabalhar com objetos proporciona flexibilidade aos desenvolvedores e permite que eles criem aplicativos baseados em SQL de alto desempenho.
